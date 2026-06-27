@@ -278,7 +278,7 @@ Open your browser at → **http://localhost:8501**
       <a href="https://github.com/ravinder75">
         
       </a>
-      &nbsp;
+  
       <a href="https://www.linkedin.com/in/ravinder-kama/">
         
       </a>
