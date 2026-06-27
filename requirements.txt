@@ -1,0 +1,23 @@
+# ─────────────────────────────────────────────
+#  Heart Disease Predictor — Requirements
+#  Project: https://github.com/ravinder75/Heart_Disease_Predictor
+#  Author:  Ravinder Kama
+# ─────────────────────────────────────────────
+
+# Web App Framework
+streamlit==1.58.0
+
+# Data Manipulation
+pandas==1.5.3
+numpy==1.26.4
+
+# Machine Learning
+scikit-learn==1.7.2
+joblib==1.5.3
+
+# Visualization (used in notebooks)
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# Arrow serialization (required by Streamlit dataframe)
+pyarrow==24.0.0
