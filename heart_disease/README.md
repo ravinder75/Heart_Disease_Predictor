@@ -254,6 +254,24 @@ Open your browser at → **http://localhost:8501**
 
 ---
 
+## 👨‍💻 Author
+
+<table>
+  <tr>
+    <td align="center" style="padding: 1rem;">
+      <b style="font-size:1.2rem;">Ravinder Kama</b><br/>
+      <i>Machine Learning Engineer</i><br/><br/>
+      <a href="https://github.com/ravinder75" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/ravinder-kama/" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
 
 > ⚠️ **Disclaimer:** This tool is for **educational and research purposes only**. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.
 
