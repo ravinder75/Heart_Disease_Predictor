@@ -35,10 +35,64 @@ st.markdown("""
 
   /* Sidebar */
   [data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #0d1b2a 0%, #1c0c0c 100%);
-    border-right: 1px solid #3d1515;
+    background: linear-gradient(180deg, #0a0f1e 0%, #1a0808 100%);
+    border-right: 1px solid rgba(255,80,80,0.25);
   }
-  [data-testid="stSidebar"] * { color: #e8e0e0 !important; }
+
+  /* Sidebar — all label text bright white */
+  [data-testid="stSidebar"] p,
+  [data-testid="stSidebar"] label,
+  [data-testid="stSidebar"] .st-emotion-cache-1629p8f,
+  [data-testid="stSidebar"] [data-testid="stWidgetLabel"] p {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 0.88rem !important;
+    letter-spacing: 0.3px;
+  }
+
+  /* Sidebar — dropdown & number input VALUE text */
+  [data-testid="stSidebar"] input,
+  [data-testid="stSidebar"] .st-emotion-cache-1c7y2kl,
+  [data-testid="stSidebar"] [data-testid="stSelectbox"] div[data-baseweb="select"] div {
+    color: #ffd166 !important;
+    font-weight: 600 !important;
+  }
+
+  /* Sidebar selectbox background */
+  [data-testid="stSidebar"] [data-baseweb="select"] > div {
+    background-color: rgba(255,255,255,0.06) !important;
+    border: 1px solid rgba(255,120,100,0.35) !important;
+    border-radius: 8px !important;
+    color: #ffd166 !important;
+  }
+
+  /* Sidebar number input box */
+  [data-testid="stSidebar"] [data-baseweb="input"] input {
+    background-color: rgba(255,255,255,0.06) !important;
+    border: 1px solid rgba(255,120,100,0.35) !important;
+    border-radius: 8px !important;
+    color: #7efff5 !important;
+    font-weight: 700 !important;
+  }
+
+  /* Sidebar slider value label */
+  [data-testid="stSidebar"] [data-testid="stSlider"] p {
+    color: #ff6b6b !important;
+    font-weight: 700 !important;
+  }
+
+  /* Sidebar heading text */
+  [data-testid="stSidebar"] h2,
+  [data-testid="stSidebar"] h3 {
+    color: #ff6b6b !important;
+    font-weight: 700 !important;
+  }
+
+  /* Sidebar markdown text */
+  [data-testid="stSidebar"] .stMarkdown p {
+    color: #aaaaaa !important;
+    font-weight: 400 !important;
+  }
 
   /* Title */
   .hero-title {
@@ -91,23 +145,24 @@ st.markdown("""
 
   /* Result boxes */
   .result-high {
-    background: linear-gradient(135deg, rgba(192,57,43,0.25), rgba(231,76,60,0.15));
+    background: linear-gradient(135deg, rgba(192,57,43,0.30), rgba(231,76,60,0.20));
     border: 2px solid #e74c3c;
-    border-radius: 14px;
-    padding: 1.5rem;
+    border-radius: 16px;
+    padding: 2.2rem 2rem;
     text-align: center;
     animation: pulse 1.5s infinite;
   }
   .result-low {
-    background: linear-gradient(135deg, rgba(39,174,96,0.2), rgba(46,204,113,0.1));
+    background: linear-gradient(135deg, rgba(39,174,96,0.25), rgba(46,204,113,0.15));
     border: 2px solid #2ecc71;
-    border-radius: 14px;
-    padding: 1.5rem;
+    border-radius: 16px;
+    padding: 2.2rem 2rem;
     text-align: center;
   }
-  .result-high h2 { color: #ff6b6b; font-size: 1.8rem; margin: 0.3rem 0; }
-  .result-low  h2 { color: #2ecc71; font-size: 1.8rem; margin: 0.3rem 0; }
-  .result-high p, .result-low p { color: #cccccc; font-size: 0.95rem; }
+  .result-high h2 { color: #ff4444; font-size: 2.4rem; font-weight: 800; margin: 0.4rem 0; }
+  .result-low  h2 { color: #27ae60; font-size: 2.4rem; font-weight: 800; margin: 0.4rem 0; }
+  .result-high p { color: #ffffff; font-size: 1.2rem; font-weight: 500; margin: 0.4rem 0; }
+  .result-low  p { color: #ffffff; font-size: 1.2rem; font-weight: 500; margin: 0.4rem 0; }
 
   @keyframes pulse {
     0%   { box-shadow: 0 0 0 0   rgba(231,76,60,0.5); }
@@ -178,10 +233,10 @@ with st.expander("📋 View Full Input Summary", expanded=False):
     summary = {
         "Feature": ["Age", "Sex", "Chest Pain", "Resting BP", "Cholesterol",
                     "Fasting BS", "Resting ECG", "Max HR", "Exercise Angina", "Oldpeak", "ST Slope"],
-        "Value": [age, sex, chest_pain, resting_bp, cholesterol,
-                  fasting_bs, resting_ecg, max_hr, ex_angina, oldpeak, st_slope]
+        "Value": [str(age), sex, chest_pain, str(resting_bp), str(cholesterol),
+                  str(fasting_bs), resting_ecg, str(max_hr), ex_angina, str(oldpeak), st_slope]
     }
-    st.dataframe(pd.DataFrame(summary), use_container_width=True, hide_index=True)
+    st.dataframe(pd.DataFrame(summary), width='stretch', hide_index=True)
 
 st.markdown("---")
 
