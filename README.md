@@ -1,6 +1,4 @@
-<p align="center">
-  <img alt="Heart Disease Prediction Banner" width="100%" />
-</p>
+
 
 <h1 align="center">❤️ Heart Disease Prediction</h1>
 
