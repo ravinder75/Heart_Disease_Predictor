@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" alt="Heart Disease Prediction Banner" width="100%" />
+  <img alt="Heart Disease Prediction Banner" width="100%" />
 </p>
 
 <h1 align="center">❤️ Heart Disease Prediction</h1>
@@ -56,7 +56,7 @@ The trained model is deployed as an **interactive Streamlit web application** �
 > The following is a real result from the deployed Streamlit application showing a **High Risk prediction** for a 25-year-old female patient with ST ECG anomaly and flat ST slope.
 
 <p align="center">
-  <img src="result_screenshot.png" alt="Heart Stroke Prediction App - Live Result Screenshot" width="520" />
+  <img src="heart_disease/result_screenshot.png" alt="Heart Stroke Prediction App - Live Result Screenshot" width="520" />
 </p>
 
 <p align="center">
