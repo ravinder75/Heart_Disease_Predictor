@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import joblib
 import time
+import warnings
+
+# Suppress sklearn unpickling version mismatch warning
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 # ── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(
