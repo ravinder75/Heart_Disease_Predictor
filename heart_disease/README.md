@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="banner.png" alt="Heart Disease Prediction Banner" width="100%" />
+</p>
 
 <h1 align="center">❤️ Heart Disease Prediction</h1>
 
@@ -6,22 +8,7 @@
   <b>An end-to-end Machine Learning web app that predicts heart disease risk from clinical patient data</b>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/KNN-Classifier-blueviolet?style=for-the-badge" />
-</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/accuracy-%3E90%25-brightgreen?style=flat-square" />
-  <img src="https://img.shields.io/badge/dataset-918%20records-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/features-11-orange?style=flat-square" />
-  <img src="https://img.shields.io/badge/status-active-success?style=flat-square" />
-</p>
-
----
 
 ## 📋 Table of Contents
 
@@ -54,7 +41,7 @@ The trained model is deployed as an **interactive Streamlit web application** �
 > The following is a real result from the deployed Streamlit application showing a **High Risk prediction** for a 25-year-old female patient with ST ECG anomaly and flat ST slope.
 
 <p align="center">
-  <img src="heart_disease/result_screenshot.png" alt="Heart Stroke Prediction App - Live Result Screenshot" width="520" />
+  <img src="result_screenshot.png" alt="Heart Stroke Prediction App - Live Result Screenshot" width="520" />
 </p>
 
 <p align="center">
@@ -177,7 +164,6 @@ heart.csv
 ```
 heart_disease/
 │
-├── 🖼️  banner.png              # Project banner image
 ├── 📸  result_screenshot.png   # Live app result screenshot
 │
 ├── 📓  Heart.ipynb             # EDA, training & evaluation notebook
@@ -268,25 +254,6 @@ Open your browser at → **http://localhost:8501**
 
 ---
 
-## 👨‍💻 Author
-
-<table>
-  <tr>
-    <td align="center" style="padding: 1rem;">
-      <b style="font-size:1.2rem;">Ravinder Kama</b><br/>
-      <i>Machine Learning Engineer</i><br/><br/>
-      <a href="https://github.com/ravinder75">
-        
-      </a>
-      &nbsp;
-      <a href="https://www.linkedin.com/in/ravinder-kama/">
-        
-      </a>
-    </td>
-  </tr>
-</table>
-
----
 
 > ⚠️ **Disclaimer:** This tool is for **educational and research purposes only**. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.
 
@@ -296,8 +263,3 @@ Open your browser at → **http://localhost:8501**
   Built with ❤️ using Python, Scikit-Learn & Streamlit
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Made%20with-Python-blue?style=flat-square&logo=python" />
-  <img src="https://img.shields.io/badge/ML-KNN%20Classifier-red?style=flat-square" />
-  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" />
-</p>
