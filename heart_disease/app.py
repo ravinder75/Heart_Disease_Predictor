@@ -11,12 +11,15 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+import os
+
 # ── Load Artifacts ────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    model   = joblib.load("KNN_heart.pkl")
-    scaler  = joblib.load("scaler.pkl")
-    columns = joblib.load("columns.pkl")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    model   = joblib.load(os.path.join(base_dir, "KNN_heart.pkl"))
+    scaler  = joblib.load(os.path.join(base_dir, "scaler.pkl"))
+    columns = joblib.load(os.path.join(base_dir, "columns.pkl"))
     return model, scaler, columns
 
 model, scaler, expected_columns = load_model()
